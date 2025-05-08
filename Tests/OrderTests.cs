@@ -1,8 +1,6 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Support.UI;
-using System;
 using System.Linq;
 
 namespace SauceDemoTests
@@ -32,6 +30,8 @@ namespace SauceDemoTests
             Assert.IsTrue(total >= 30 && total <= 60, $"Total is {total}, which is not between $30 and $60.");
 
             Checkout();
+
+            Assert.IsTrue(driver.PageSource.Contains("Thank you for your order!"), "Order confirmation message not found.");
         }
 
         [TearDown]
