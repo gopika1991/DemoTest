@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\sameeras\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sameeras\\.nuget\\packages"
+    ]
+  }
+}
